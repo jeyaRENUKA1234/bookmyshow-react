@@ -1,0 +1,274 @@
+.screen_header{
+  background-color: #333545 ;
+  color: #fff;
+ padding: 10px 0;
+
+}
+.screen_row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.screen_col{
+    display: flex;
+    align-items: center;
+    .back_btn{   
+        padding: 0 10px;
+    }
+}
+// .theatre_details{
+//     position:fixed;
+//     top:0;
+//     margin-top: 30px;
+// }
+.name{
+    font-size: 15px;
+    margin: 0;
+    font-weight: 700;
+}
+.censor{
+    margin-right: 8px;
+   font-size: 8px;
+    padding: 4px;   
+    border-radius: 50%;
+    border: 1px solid;
+    display: inline-block;
+    text-align: center;
+    line-height: 1.2;
+    color:#fff;
+   
+}
+.td_content{
+    margin: 0;
+    color: #999;
+    font-size: 17px;
+    font-weight: 600;
+}
+.close_btn{
+    padding: 0 20px;
+}
+.seat_row{
+    display: flex;
+}
+table{
+    margin: auto;
+}
+.seat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    color: rgb(70, 232, 29);
+    border: 1px solid rgb(124, 241, 124);
+    border-radius: 2px;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 5px;
+}
+.seat.empty{
+    visibility: hidden;
+}
+.seat.selected {
+    background-color:#1ea83c;
+    color: white;
+  }
+  .seat.available:hover {
+    background-color: rgb(70, 232, 29);
+    color: #fff;
+  }
+// .videoicon{
+
+// }
+.eyes-class{
+    text-align: center;
+    color: #333;
+    font-size: 12px;
+    // padding-top: 60px;
+}
+.class{
+    width:200px;
+    height: 3px;
+    background-color:rgba(207, 246, 248, 0.911);
+    margin-left: 670px;
+    margin-top: 60px;
+    box-shadow: 0px -3px 4px 4px rgba(145, 240, 245, 0.457);
+}
+// .eyes-class::before{
+//     content: '';
+//     width:50%;
+//     height: 20px;
+//     border: 2px solid blue;
+// }
+.selects{
+    display: flex;
+    justify-content:center;
+    margin-top: 20px;
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    z-index: 3;
+    box-shadow: 0 0 3px 4px white;
+    background-color: white;
+}
+.pay{
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    z-index: 6;
+    background-color: white;
+    box-shadow: 3px -4px 7px -1px rgba(0, 0, 0, 0.244);
+
+}
+.firsticon{
+    font-size: 30px;
+    line-height: 20px;
+    color:green;
+    margin-left: 40px;
+}
+.letter{
+    font-size: 17px;
+    margin: 0px 7px;
+}
+.secondicon{
+    font-size: 30px;
+    line-height: 20px;
+    color:green;
+    margin-left:15px;
+}
+.thirdicon{
+    font-size: 30px;
+    line-height: 20px;
+    color:#b5b2b2c7;
+    margin-left: 15px;
+}
+.lastbutton{
+     background-color:#f84465d6;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+    // position: fixed;
+    // bottom: 0;
+    // left: 0;
+    width: 20%;
+    z-index: 9;
+    border: none;
+    border-radius: 10px;
+    margin-left: 41%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    // margin-top: 40px;
+    // margin-bottom: 30px;
+    color:#fff;
+    font-weight: 500;
+}
+.notseat{
+    background-color: #999;
+    color:#fff;
+}
+.tickets{
+    color: #fff !important;
+    border:1px solid white !important;
+}
+.blocked div{
+    color:white !important;
+    border:none;
+    background-color: #c5c1c18e;
+    cursor: default;
+}
+.blocked div:hover{
+    // color:#999 !important;
+    background-color:#b4b3b38e !important;
+    
+}
+.scr-section{
+    width: 100%;
+    margin: auto;
+    background-color: #333;
+    
+    // padding:20px 0px;
+}
+
+        // responsive
+@media(min-width:320px){
+
+    .class{
+        width:200px;
+        height: 3px;
+        background-color:rgba(207, 246, 248, 0.911);
+        margin-left: 100px;
+        margin-top: 60px;
+        box-shadow: 0px -3px 4px 4px rgba(145, 240, 245, 0.457);
+    }
+    .seat_layout{
+        overflow: auto;
+        padding:0px 20px 0 20px;
+        margin:auto;
+    }
+    .lastbutton{
+        background-color:#f84465d6;
+       padding: 10px;
+       text-align: center;
+       box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+       // position: fixed;
+       // bottom: 0;
+       // left: 0;
+       width: 50%;
+       z-index: 9;
+       border: none;
+       border-radius: 10px;
+       margin-left: 25%;
+       margin-top: 10px;
+       margin-bottom: 10px;
+       // margin-top: 40px;
+       // margin-bottom: 30px;
+       color:#fff;
+       font-weight: 500;
+   }
+}
+@media(min-width:690px){
+    .class{
+        width:200px;
+        height: 3px;
+        background-color:rgba(207, 246, 248, 0.911);
+        margin-left: 280px;
+        margin-top: 60px;
+        box-shadow: 0px -3px 4px 4px rgba(145, 240, 245, 0.457);
+    }
+}
+@media(min-width:1020px){
+    .class{
+        width:200px;
+        height: 3px;
+        background-color:rgba(207, 246, 248, 0.911);
+        margin-left: 670px;
+        margin-top: 60px;
+        box-shadow: 0px -3px 4px 4px rgba(145, 240, 245, 0.457);
+    }
+    .lastbutton{
+        background-color:#f84465d6;
+       padding: 10px;
+       text-align: center;
+       box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+       // position: fixed;
+       // bottom: 0;
+       // left: 0;
+       width: 20%;
+       z-index: 9;
+       border: none;
+       border-radius: 10px;
+       margin-left: 41%;
+       margin-top: 10px;
+       margin-bottom: 10px;
+       // margin-top: 40px;
+       // margin-bottom: 30px;
+       color:#fff;
+       font-weight: 500;
+   }
+ 
+}
+.showtimes.active{
+    background-color: #1ea83c;
+    color: #fff !important;
+   }
